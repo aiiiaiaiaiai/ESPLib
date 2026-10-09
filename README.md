@@ -4,6 +4,7 @@ ESP Library for Roblox { This will obviously have more features than just chams 
 Instructions >
  - First load the Library > loadstring(game:HttpGet("https://raw.githubusercontent.com/aiiiaiaiaiai/ESPLib/refs/heads/main/ESPLib.luau")()
  - Add your ESP > _ESPLib:Create("PLAYER", "chams", Color3.fromRGB(0,0,0), false)
+ - Remove your ESP > _ESPLib:Remove("PLAYER", "ESPTYPE")
   - Full Script >
     local _ESPLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/aiiiaiaiaiai/ESPLib/refs/heads/main/ESPLib.luau"))()
     
