@@ -1,5 +1,5 @@
 # ESPLib
-ESP Library for Roblox
+ESP Library for Roblox { This will obviously have more features than just chams i don't have much time tho. }
 
 Instructions >
  - Example > _ESPLib:Create("PLAYER", "chams", Color3.fromRGB(0,0,0), false)
