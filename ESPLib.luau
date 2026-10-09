@@ -40,10 +40,11 @@ function _ESPLib:Remove(plr, esp)
     local _espfolder = _rgui:FindFirstChild("_ESPLIB")
     if not _espfolder then return end
     _espfolder.Name = "_ESPLIB"
-    
+
+    local _plrName = typeof(plr) == "Instance" and plr.Name or tostring(plr)
     local _uncaps = tostring(esp):lower()
     if esp then
-    local _searchesp = _espfolder:FindFirstChild(plr .. "-" .. esp)
+    local _searchesp = _espfolder:FindFirstChild(_plrName .. "-" .. esp)
     if not _searchesp then return end
     _searchesp:Destroy()
     end
