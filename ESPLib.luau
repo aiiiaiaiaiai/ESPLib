@@ -4,7 +4,7 @@ local _esptypes = {
     ["chams"] = "chams",
 }
 
-function _ESPLib:Create(plr, esp, color, outline, filled, thickness)
+function _ESPLib:Create(plr, esp, color, outline, thickness)
     local _runserv = game:GetService("RunService")
     local _cam = workspace.CurrentCamera
     local _rgui = game:GetService("CoreGui"):WaitForChild("RobloxGui")
