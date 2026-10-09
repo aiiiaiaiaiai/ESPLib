@@ -18,7 +18,7 @@ function _ESPLib:Create(plr, esp, color, outline, thickness)
     local _plrchar = typeof(plr) == "Instance" and plr.Character or workspace:FindFirstChild(_plrName)
     if not _plrchar then return end 
     if _findesp == "chams" then
-        if _espfolder:FindFirstChild(_plrName .. "-Chams") then return end
+        if _espfolder:FindFirstChild(_plrName .. "-chams") then return end
         local _highlight = Instance.new("Highlight")
         _highlight.Name = _plrName .. "-chams"
         _highlight.FillColor = color
@@ -43,8 +43,8 @@ function _ESPLib:Remove(plr, esp)
 
     local _plrName = typeof(plr) == "Instance" and plr.Name or tostring(plr)
     local _uncaps = tostring(esp):lower()
-    if esp then
-    local _searchesp = _espfolder:FindFirstChild(_plrName .. "-" .. esp)
+    if _uncaps then
+    local _searchesp = _espfolder:FindFirstChild(_plrName .. "-" .. _uncaps)
     if not _searchesp then return end
     _searchesp:Destroy()
     end
