@@ -18,9 +18,9 @@ function _ESPLib:Create(plr, esp, color, outline, thickness)
     local _plrchar = typeof(plr) == "Instance" and plr.Character or workspace:FindFirstChild(_plrName)
     if not _plrchar then return end 
     if _findesp == "chams" then
-        if _espfolder:FindFirstChild(_plrName .. "-chams") then return end
+        if _espfolder:FindFirstChild(_plrName .. "-" .. _findesp) then return end
         local _highlight = Instance.new("Highlight")
-        _highlight.Name = _plrName .. "-chams"
+        _highlight.Name = _plrName .. "-" .. _findesp
         _highlight.FillColor = color
         _highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
         _highlight.Adornee = _plrchar
