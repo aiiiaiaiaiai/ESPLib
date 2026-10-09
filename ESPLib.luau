@@ -48,3 +48,4 @@ function _ESPLib:Remove(plr, esp)
     _searchesp:Destroy()
     end
 end
+return _ESPLib
