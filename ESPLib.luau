@@ -55,5 +55,5 @@ function _ESPLib:RemoveAll()
     for i,v in _espfolder:GetChildren() do
         v:Destroy()
     end
-end
+end -- GITHUB WONT UPDATE THE REMOVEALL FOR SOME REASON AND ITS STUCK AT ONLY :REMOVE() AAAAAAAAAAAAAAAAAAAAAAAA
 return _ESPLib
