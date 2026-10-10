@@ -49,4 +49,11 @@ function _ESPLib:Remove(plr, esp)
     _searchesp:Destroy()
     end
 end
+function _ESPLib:RemoveAll()
+    local _rgui = game:GetService("CoreGui"):WaitForChild("RobloxGui")
+    local _espfolder = _rgui:FindFirstChild("_ESPLIB")
+    for i,v in _espfolder:GetChildren() do
+        v:Destroy()
+    end
+end
 return _ESPLib
