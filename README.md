@@ -13,3 +13,7 @@ Instructions >
 
     -- Chams
 { Plr, Esp, Color { Color3.fromRGB() or false } , Outline { Color3.fromRGB() or false } }
+
+
+
+AAAAA WILL NOW BE ONLY UPDATED AT https://loadstring.net/#/paste/YBmjyZB31g BECAUSE THIS SHITTY GITHUB STINKS AND DOESNT UPDATE MY RAW FILE AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
